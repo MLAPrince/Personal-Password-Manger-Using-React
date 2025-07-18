@@ -12,7 +12,7 @@ import About from './components/About'
 import Footer from './components/Footer';
 
 function App() {
-  
+
 
   const location = useLocation();
   const [prevPath, setPrevPath] = useState(location.pathname);
@@ -45,62 +45,52 @@ function App() {
     })
   };
 
-  React.useEffect(() => {
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden';
-    return () => {
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = '';
-    };
-  }, []);
-
   return (
-    <>
+    <div className="relative flex flex-col min-h-screen">
+      <div className="absolute top-0 z-[-1] h-full w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
       <Navbar />
-      
-      <AnimatePresence mode="wait">
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={
-            <motion.div
-              custom={direction}
-              variants={variants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              style={{ minHeight: '100vh' }}
-            >
-              <Home />
-            </motion.div>
-          } />
-          <Route path="/passwords" element={
-            <motion.div
-              custom={direction}
-              variants={variants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              style={{ minHeight: '100vh' }}
-            >
-              <Passwords />
-            </motion.div>
-          } />
-          <Route path="/about" element={
-            <motion.div
-              custom={direction}
-              variants={variants}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              style={{ minHeight: '100vh' }}
-            >
-              <About />
-            </motion.div>
-          } />
-        </Routes>
-      </AnimatePresence>
+      <main className='flex-grow'>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={
+              <motion.div
+                custom={direction}
+                variants={variants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                <Home />
+              </motion.div>
+            } />
+            <Route path="/passwords" element={
+              <motion.div
+                custom={direction}
+                variants={variants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                <Passwords />
+              </motion.div>
+            } />
+            <Route path="/about" element={
+              <motion.div
+                custom={direction}
+                variants={variants}
+                initial="initial"
+                animate="animate"
+                exit="exit"
+              >
+                <About />
+              </motion.div>
+            } />
+          </Routes>
+        </AnimatePresence>
+      </main>
       <Footer />
 
-    </>
+    </div>
   )
 }
 
