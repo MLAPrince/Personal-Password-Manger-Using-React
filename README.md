@@ -12,7 +12,7 @@ A simple and secure password manager built with React. This application allows y
 - **Smooth Page Transitions:** Enjoy smooth, animated transitions between pages.
 
 - ## Interface
-- ><img width="1342" height="653" alt="MLA Pass - Home Page" src="https://github.com/user-attachments/assets/7c1871f5-4f20-496f-90df-e3425f69f5a4" />
+  <img width="1342" height="653" alt="MLA Pass - Home Page" src="https://github.com/user-attachments/assets/7c1871f5-4f20-496f-90df-e3425f69f5a4" />
 
 
 ## Getting Started
