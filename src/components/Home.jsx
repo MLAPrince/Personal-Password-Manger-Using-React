@@ -75,9 +75,7 @@ const Manager = () => {
 
 
     return (
-        <div>
-            <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] "></div>
-
+        <div className="relative pt-1 pb-5">
             <div className="relative  ">
 
                 <div className='container mx-auto flex flex-col text-white lg:max-w-3xl md:max-w-full w-full relative z-10 p-4'>
