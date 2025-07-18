@@ -2,8 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='text-white min-h-screen relative'>
-      <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] "></div>
+    <div className='text-white relative'>
       <div className="container mx-auto px-4 py-10 max-w-2xl relative z-10">
         <h1 className="text-4xl font-bold mb-4 text-lime-400">About Me</h1>
         <p className="mb-4 text-lg">Hi! My name is <span className="font-bold text-white">Muhammad Mohiuddin</span>, but you might know me as <span className="font-bold text-lime-400">MLA</span> on many platforms. I use MLA as my username, nickname, and online identity everywhere.</p>
