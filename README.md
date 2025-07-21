@@ -45,3 +45,11 @@ To get a local copy up and running, follow these simple steps.
 - [Framer Motion](https://www.framer.com/motion/) - A production-ready motion library for React.
 - [React Router](https://reactrouter.com/) - A standard library for routing in React.
 - [Vite](https://vitejs.dev/) - A fast build tool and development server for modern web projects.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+*Made with ❤️ by MLA using React, FramerMotion and Vite.*
